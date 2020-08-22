@@ -1,0 +1,105 @@
+<html>
+<head>
+<title>main.dart</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a9b7c6;}
+.s1 { color: #6a8759;}
+.s2 { color: #cc7832;}
+.s3 { color: #6897bb;}
+.s4 { color: #808080;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+main.dart</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">'package:flutter/cupertino.dart'</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">'package:flutter/material.dart'</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">'package:flutter/rendering.dart'</span><span class="s2">;</span>
+
+<span class="s2">void </span><span class="s0">main() {</span>
+  <span class="s0">runApp(Myapp())</span><span class="s2">;</span>
+<span class="s0">}</span>
+
+<span class="s2">class </span><span class="s0">Myapp </span><span class="s2">extends </span><span class="s0">StatelessWidget {</span>
+  <span class="s0">@override</span>
+  <span class="s0">Widget build(BuildContext context) {</span>
+    <span class="s2">return </span><span class="s0">MaterialApp(</span>
+      <span class="s0">home: Scaffold(</span>
+        <span class="s0">backgroundColor: Colors.teal</span><span class="s2">,</span>
+        <span class="s0">body: SafeArea(</span>
+          <span class="s0">child: Column(</span>
+            <span class="s0">mainAxisAlignment: MainAxisAlignment.center</span><span class="s2">,</span>
+            <span class="s0">children: &lt;Widget&gt;[</span>
+              <span class="s0">CircleAvatar(</span>
+                <span class="s0">radius: </span><span class="s3">50.0</span><span class="s2">,</span>
+                <span class="s0">backgroundImage: AssetImage(</span><span class="s1">'images/saptarshi.jpg'</span><span class="s0">)</span><span class="s2">,</span>
+              <span class="s0">)</span><span class="s2">,</span>
+              <span class="s0">Text(</span>
+                <span class="s1">'Saptarshi Kattyayan'</span><span class="s2">,</span>
+                <span class="s0">style: TextStyle(</span>
+                  <span class="s0">fontFamily: </span><span class="s1">'Pacifico'</span><span class="s2">,</span>
+                  <span class="s0">fontSize: </span><span class="s3">20.0</span><span class="s2">,</span>
+                  <span class="s0">color: Colors.white</span><span class="s2">,</span>
+                  <span class="s4">//fontWeight: FontWeight.bold,</span>
+                <span class="s0">)</span><span class="s2">,</span>
+              <span class="s0">)</span><span class="s2">,</span>
+              <span class="s0">Text(</span>
+                <span class="s1">'FLUTTER DEVELOPER'</span><span class="s2">,</span>
+                <span class="s0">style: TextStyle(</span>
+                  <span class="s0">fontFamily: </span><span class="s1">'Source Sans Pro'</span><span class="s2">,</span>
+                  <span class="s0">color: Colors.teal.shade100</span><span class="s2">,</span>
+                  <span class="s0">letterSpacing: </span><span class="s3">2.5</span><span class="s2">,</span>
+                  <span class="s0">fontWeight: FontWeight.bold</span><span class="s2">,</span>
+
+                <span class="s0">)</span><span class="s2">,</span>
+              <span class="s0">)</span><span class="s2">,</span>
+              <span class="s0">Card(</span>
+                <span class="s0">color: Colors.white</span><span class="s2">,</span>
+                <span class="s0">margin: EdgeInsets.symmetric(vertical: </span><span class="s3">10</span><span class="s2">, </span><span class="s0">horizontal: </span><span class="s3">20</span><span class="s0">)</span><span class="s2">,</span>
+                <span class="s0">child: ListTile(</span>
+                  <span class="s0">leading: Icon(</span>
+                    <span class="s0">Icons.phone</span><span class="s2">,</span>
+                    <span class="s0">color: Colors.teal</span><span class="s2">,</span>
+                  <span class="s0">)</span><span class="s2">,</span>
+                  <span class="s0">title: Text(</span>
+                    <span class="s1">'+91- 1234 5678 91011'</span><span class="s2">,</span>
+                    <span class="s0">style: TextStyle(</span>
+                        <span class="s0">fontFamily: </span><span class="s1">'Source Sans Pro'</span><span class="s2">,</span>
+                        <span class="s0">fontSize: </span><span class="s3">20.0</span>
+                    <span class="s0">)</span><span class="s2">,</span>
+                  <span class="s0">)</span><span class="s2">,</span>
+                <span class="s0">)</span><span class="s2">,</span>
+              <span class="s0">)</span><span class="s2">,</span>
+
+              <span class="s0">Card(</span>
+                <span class="s0">color: Colors.white</span><span class="s2">,</span>
+                <span class="s0">margin: EdgeInsets.symmetric(vertical: </span><span class="s3">10</span><span class="s2">, </span><span class="s0">horizontal: </span><span class="s3">20</span><span class="s0">)</span><span class="s2">,</span>
+                <span class="s0">child: ListTile(</span>
+                  <span class="s0">leading:Icon(</span>
+                    <span class="s0">Icons.email</span><span class="s2">,</span>
+                    <span class="s0">color: Colors.teal</span><span class="s2">,</span>
+                  <span class="s0">)</span><span class="s2">,</span>
+                  <span class="s0">title:Text(</span>
+                    <span class="s1">'kattyayan@gmail.com'</span><span class="s2">,</span>
+                    <span class="s0">style: TextStyle(</span>
+                      <span class="s0">fontFamily: </span><span class="s1">'Source Sans Pro'</span><span class="s2">,</span>
+                      <span class="s0">fontSize: </span><span class="s3">20.0</span><span class="s2">,</span>
+                    <span class="s0">)</span><span class="s2">,</span>
+                  <span class="s0">)</span><span class="s2">,</span>
+                <span class="s0">)</span><span class="s2">,</span>
+              <span class="s0">)</span><span class="s2">,</span>
+            <span class="s0">]</span><span class="s2">,</span>
+          <span class="s0">)</span><span class="s2">,</span>
+        <span class="s0">)</span><span class="s2">,</span>
+      <span class="s0">)</span><span class="s2">,</span>
+    <span class="s0">)</span><span class="s2">;</span>
+  <span class="s0">}</span>
+<span class="s0">}</span>
+
+</pre>
+</body>
+</html>
